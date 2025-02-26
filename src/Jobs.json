@@ -83,6 +83,48 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
+    },
+    {
+      "id": "275c",
+      "title": "TechWave Solutions",
+      "type": "Remote",
+      "location": "New York, USA",
+      "salary": "$50K - 60K",
+      "description": "We are looking for a skilled React Frontend Developer to join our dynamic team. You'll work with designers and backend developers to build modern, responsive web applications. Strong knowledge of React, Redux, and TypeScript is a plus.",
+      "company": {
+        "name": "",
+        "description": "TechWave Solutions is a cutting-edge software development company specializing in AI-driven web applications and cloud solutions. We foster innovation and encourage growth in a collaborative environment.",
+        "contactEmail": "careers@techwave.com",
+        "contactPhone": "555-123-4567"
+      }
+    },
+    {
+      "id": "a9be",
+      "title": "Senior React Engineer",
+      "type": "Part-Time",
+      "location": "San Francisco, CA",
+      "salary": "Over $200K",
+      "description": "We're looking for a Senior React Engineer with experience in Next.js, Tailwind CSS, and performance optimization. The ideal candidate should have 5+ years of experience building scalable front-end applications.",
+      "company": {
+        "name": "CodeCrafters Inc.",
+        "description": "CodeCrafters Inc. is a global leader in web development, providing state-of-the-art digital solutions for startups and enterprises.",
+        "contactEmail": "hr@codecrafters.com",
+        "contactPhone": " 555-987-6543"
+      }
+    },
+    {
+      "id": "0c0c",
+      "title": "React Native Developer",
+      "type": "Full-Time",
+      "location": "London, UK",
+      "salary": "$125K - 150K",
+      "description": "Join our mobile team as a React Native Developer and help build high-performance mobile applications for iOS and Android. You should be proficient in React Native, Expo, and Firebase.",
+      "company": {
+        "name": "MobileX Solutions",
+        "description": "MobileX Solutions is a rapidly growing mobile app development company focused on delivering seamless user experiences through high-quality applications.",
+        "contactEmail": "jobs@mobilexsolutions.com",
+        "contactPhone": "+44 20 7946 0123"
+      }
     }
   ]
 }
