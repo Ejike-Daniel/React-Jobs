@@ -3,6 +3,7 @@ import { FaArrowLeft } from "react-icons/fa6";
 import { Link, useLoaderData, useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 
+// The below method is the useLoader method from react-router-dom
 const SingleJobPage = ({ deleteJob }) => {
   const { id } = useParams();
   const job = useLoaderData();
@@ -108,8 +109,6 @@ const SingleJobPage = ({ deleteJob }) => {
     </>
   );
 };
-
-// The below method is the useLoader method from react-router-dom
 
 const jobLoader = async ({ params }) => {
   const res = await fetch(`/api/jobs/${params.id}`);

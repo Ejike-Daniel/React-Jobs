@@ -5,6 +5,13 @@ import Spinner from "./Spinner";
 const JobListings = ({ isHome = false }) => {
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [visibleJobs, setVisibleJobs] = useState(6);
+
+  const jobsPerLoad = 3;
+
+  const loadMoreJobs = () => {
+    setVisibleJobs((prev) => prev + jobsPerLoad);
+  };
 
   useEffect(() => {
     const apiUrl = isHome ? "api/jobs?_limit=3" : "api/jobs";
@@ -41,6 +48,11 @@ const JobListings = ({ isHome = false }) => {
             </div>
           )}
         </>
+      </div>
+      <div className="flex justify-center mt-8 ">
+        <button className="bg-indigo-300 px-4 py-2 rounded-lg text-white font-medium hover:bg-indigo-500 cursor-pointer">
+          Load More
+        </button>
       </div>
     </section>
   );

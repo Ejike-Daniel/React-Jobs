@@ -125,6 +125,20 @@
         "contactEmail": "jobs@mobilexsolutions.com",
         "contactPhone": "+44 20 7946 0123"
       }
+    },
+    {
+      "id": "62af",
+      "title": "Junior React Developer",
+      "type": "Part-Time",
+      "location": "Toronto, Canada",
+      "salary": "Under $50K",
+      "description": "Are you passionate about front-end development? We are looking for a Junior React Developer to assist in building responsive web applications. Great opportunity to learn and grow",
+      "company": {
+        "name": "DevLaunch Labs",
+        "description": "DevLaunch Labs is a startup incubator that helps new businesses scale with technology. We focus on innovation and providing hands-on experience to young developers.",
+        "contactEmail": "intern@devlaunchlabs.com",
+        "contactPhone": "+1 647-555-0198"
+      }
     }
   ]
 }
