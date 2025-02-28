@@ -11,6 +11,7 @@ import ErrorPage from "./pages/ErrorPage";
 import SingleJobPage, { jobLoader } from "./pages/SingleJobPage";
 import AddJobsPage from "./pages/AddJobsPage";
 import EditPage from "./pages/EditPage";
+import ContactPage from "./pages/Contact";
 
 const App = () => {
   // Add new job
@@ -25,7 +26,7 @@ const App = () => {
     return;
   };
 
-  // delete job
+  // Delete job
   const deleteJob = async (id) => {
     const res = await fetch(`/api/jobs/${id}`, {
       method: "DELETE",
@@ -33,8 +34,7 @@ const App = () => {
     return;
   };
 
-  // update job
-
+  // Update job
   const updateJob = async (job) => {
     const res = await fetch(`/api/jobs/${job.id}`, {
       method: "PUT",
@@ -45,6 +45,7 @@ const App = () => {
     });
     return;
   };
+
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<MainLayout />}>
@@ -64,11 +65,12 @@ const App = () => {
           path="/add-jobs"
           element={<AddJobsPage addJobSubmit={addJob} />}
         />
-
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Route>
     )
   );
+
   return <RouterProvider router={router} />;
 };
 
