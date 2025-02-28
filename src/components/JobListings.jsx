@@ -42,18 +42,23 @@ const JobListings = ({ isHome = false }) => {
             <Spinner loading={loading} />
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {jobs.map((job) => (
+              {jobs.slice(0, visibleJobs).map((job) => (
                 <JobListing key={job.id} job={job} />
               ))}
             </div>
           )}
         </>
       </div>
-      <div className="flex justify-center mt-8 ">
-        <button className="bg-indigo-300 px-4 py-2 rounded-lg text-white font-medium hover:bg-indigo-500 cursor-pointer">
-          Load More
-        </button>
-      </div>
+      {visibleJobs < jobs.length && (
+        <div className="flex justify-center mt-8 ">
+          <button
+            onClick={loadMoreJobs}
+            className="bg-black px-4 py-2 rounded-lg text-white font-medium  cursor-pointer"
+          >
+            Load More
+          </button>
+        </div>
+      )}
     </section>
   );
 };
